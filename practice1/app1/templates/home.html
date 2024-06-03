@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/app1/">
+        <h1>app1/ home</h1>
+    </a>
+    <a href="/app1/about/">
+        <h1>app1/ about</h1>
+    </a>
+    <a href="/app1/contact/">
+        <h1>app1/ contact</h1>
+    </a>
+
+    <p>app1 home</p>
+
+    {{ lst | join:" " }}
+    <br>
+    {{ time | date:"D d M Y" }}
+    {{ time | date:"SHORT_DATE_FORMAT" }}
+    <br>
+    {{ empty | default:"nothing here" }}
+</body>
+
+</html>
